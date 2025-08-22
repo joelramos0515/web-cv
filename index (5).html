@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Joel Ramos — Payroll Automation & UI-grade Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="US/APAC payroll specialist. UI-grade portfolio with projects, skills, and experience. Apps Script, Excel VBA, JS.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ================================= NAVBAR ================================= -->
+  <header class="navbar" role="navigation">
+    <div class="container nav-row">
+      <a class="logo" href="#"><span>joel</span><strong>.ramos</strong></a>
+
+      <nav class="menu" aria-label="Main">
+        <a href="#about">About</a>
+        <div class="menu-item has-sub">
+          <button class="sub-btn" aria-haspopup="true" aria-expanded="false">Projects</button>
+          <div class="submenu" role="menu">
+            <a href="#projects" role="menuitem">All</a>
+            <a href="#projects" data-tab="automation" role="menuitem">Automation</a>
+            <a href="#projects" data-tab="reporting" role="menuitem">Reporting</a>
+            <a href="#projects" data-tab="tools" role="menuitem">Tools</a>
+          </div>
+        </div>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-ctas">
+        <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
+        <a class="btn primary" href="Joel-Ramos-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <button id="openDrawer" class="hamburger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="logo small"><span>joel</span><strong>.ramos</strong></span>
+      <button id="closeDrawer" class="btn ghost">✕</button>
+    </div>
+    <a href="#about" class="d-link">About</a>
+    <a href="#projects" class="d-link">Projects</a>
+    <a href="#skills" class="d-link">Skills</a>
+    <a href="#experience" class="d-link">Experience</a>
+    <a href="#contact" class="d-link">Contact</a>
+  </aside>
+
+  <!-- ================================= HERO ================================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Payroll Automation Specialist</p>
+        <h1>Clean systems, accurate runs, <span>automation that sticks</span>.</h1>
+        <p class="lede">I build pragmatic payroll tooling with Google Apps Script, Excel VBA, and JavaScript—validation UIs, reconciliation pipelines, garnishments, and real‑time tax engines.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:joelramos0515@yahoo.com">Let's talk</a>
+          <a class="btn" target="_blank" href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a>
+          <a class="btn" target="_blank" href="https://github.com/your-github">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar"></div>
+        <dl class="quick">
+          <div><dt>Location</dt><dd>Manila (UTC+8)</dd></div>
+          <div><dt>Stack</dt><dd>Apps Script · Excel VBA · JS</dd></div>
+          <div><dt>Systems</dt><dd>ADP · UKG · Kronos · Paylocity</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================= SECTIONS ================================= -->
+  <main id="content" class="container">
+    <section id="about" class="card section">
+      <h2>About</h2>
+      <p>Licensed Professional Teacher and Certified Payroll Professional. Hands‑on across US and APAC markets; I own day‑to‑day payroll and design automations that reduce cycle time and surface errors before they ship.</p>
+    </section>
+
+    <!-- Tabbed Projects -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="all" role="tab" aria-selected="true">All</button>
+          <button class="tab" data-tab="automation" role="tab">Automation</button>
+          <button class="tab" data-tab="reporting" role="tab">Reporting</button>
+          <button class="tab" data-tab="tools" role="tab">Tools</button>
+        </div>
+      </div>
+
+      <div class="grid projects">
+        <article class="card p-card" data-cat="automation">
+          <div class="p-head"><h3>Payroll Auto Validation</h3><span class="pill">Apps Script · Sheets</span></div>
+          <p>End‑to‑end validation UI with previews, status rules, and XLSX export. Cut QA time by ~60%.</p>
+          <div class="p-actions"><a class="btn small" href="#">Case study</a><a class="btn small ghost" href="#">Code</a></div>
+        </article>
+
+        <article class="card p-card" data-cat="tools">
+          <div class="p-head"><h3>Withholding Tax Engine (PH)</h3><span class="pill">Apps Script · VBA</span></div>
+          <p>Real‑time BIR withholding across daily/weekly/semi‑monthly/monthly frequencies with updated tables.</p>
+          <div class="p-actions"><a class="btn small" href="#">Docs</a></div>
+        </article>
+
+        <article class="card p-card" data-cat="automation">
+          <div class="p-head"><h3>Check Posting Effort Reduction</h3><span class="pill">Excel Automation</span></div>
+          <p>Excel macro tooling that cut posting time from ~120 → ~40 minutes (Amazon OPS PH).</p>
+        </article>
+
+        <article class="card p-card" data-cat="reporting">
+          <div class="p-head"><h3>Bonus Reporting Pipeline</h3><span class="pill">Apps Script</span></div>
+          <p>Pipeline for Sign‑on/Referral/Commission—on‑time payouts with audit trail.</p>
+        </article>
+
+        <article class="card p-card" data-cat="tools">
+          <div class="p-head"><h3>PTO Calculator</h3><span class="pill">Excel VBA</span></div>
+          <p>Automated accrual logic to remove manual computation and speed up ticket resolution.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="card section">
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>US/PH Payroll</li><li>APAC Payroll</li><li>Google Apps Script</li><li>Excel (VBA/Macros)</li>
+        <li>JavaScript</li><li>Garnishments</li><li>Reconciliation</li><li>Reporting & Analytics</li>
+        <li>ADP WFN</li><li>ADP Payforce</li><li>Smart Compliance</li><li>UKG / Kronos</li>
+        <li>Paylocity</li><li>Sprout</li><li>PeopleSoft</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article>
+          <header><h3>Payroll Specialist — Novatech (StaffVirtual)</h3><span>Jan 2023 — Present</span></header>
+          <ul>
+            <li>POC for payroll inquiries; validation & processing.</li>
+            <li>UKG reports; commissions/referrals; off‑cycle requests.</li>
+            <li>401(k) monitoring, employment verification.</li>
+            <li><em>Improvements:</em> Reimbursement tracker (MS Forms), Payroll Auto Validation.</li>
+          </ul>
+        </article>
+        <article>
+          <header><h3>Payroll Specialist/Admin — IQ BackOffice</h3><span>Nov 2021 — Jan 2022</span></header>
+          <ul>
+            <li>Multi‑frequency payroll; final/terminal pay; onboarding & I‑9 monitoring.</li>
+            <li><em>Automation:</em> PTO Calculator (VBA), Bonus Reporting pipeline.</li>
+          </ul>
+        </article>
+        <article>
+          <header><h3>FinOps Payroll Analyst — Amazon OPS PH</h3><span>Aug 2020 — Aug 2021</span></header>
+          <ul>
+            <li>Quick Pay/Final Pay; DD issue resolution; card setup.</li>
+            <li><em>Automation:</em> Cut check posting from ~120 → ~40 minutes.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card section">
+      <h2>Contact</h2>
+      <p>Valenzuela City, NCR · Manila (UTC+8) · Open to freelance/consulting for payroll automation.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:joelramos0515@yahoo.com">Email Joel</a>
+        <a class="btn" target="_blank" href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a>
+        <a class="btn" target="_blank" href="https://github.com/your-github">GitHub</a>
+      </div>
+    </section>
+
+    <footer class="foot">© <span id="y"></span> Joel Ramos · LPT · CPP</footer>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Theme toggle
+    const root = document.documentElement;
+    const k='theme'; const s=localStorage.getItem(k); if(s) root.dataset.theme=s;
+    document.getElementById('themeToggle').onclick=()=>{const n=root.dataset.theme==='light'?'dark':'light';root.dataset.theme=n;localStorage.setItem(k,n)};
+
+    // Drawer
+    const drawer=document.getElementById('drawer');
+    const openBtn=document.getElementById('openDrawer');
+    const closeBtn=document.getElementById('closeDrawer');
+    const toggle=(open)=>{drawer.setAttribute('aria-hidden', String(!open)); document.body.classList.toggle('drawer-open', open)};
+    openBtn.onclick=()=>toggle(true); closeBtn.onclick=()=>toggle(false);
+    drawer.querySelectorAll('a').forEach(a=>a.onclick=()=>toggle(false));
+
+    // Submenu (desktop)
+    document.querySelectorAll('.has-sub').forEach(w=>{
+      const btn=w.querySelector('.sub-btn'); const sub=w.querySelector('.submenu');
+      btn.addEventListener('click', ()=>{
+        const expanded = btn.getAttribute('aria-expanded')==='true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        sub.classList.toggle('open', !expanded);
+      });
+    });
+
+    // Tabs filter
+    const tabs=document.querySelectorAll('.tab');
+    const cards=[...document.querySelectorAll('.p-card')];
+    tabs.forEach(t=>t.addEventListener('click', ()=>{
+      tabs.forEach(x=>x.classList.remove('active')); t.classList.add('active');
+      const cat=t.dataset.tab;
+      cards.forEach(c=>{
+        c.style.display = (!cat || cat==='all' || c.dataset.cat===cat) ? '' : 'none';
+      });
+    }));
+
+    // Scroll spy for top menu
+    const menuLinks=[...document.querySelectorAll('.menu > a')].filter(a=>a.hash);
+    const sections=menuLinks.map(a=>document.querySelector(a.hash));
+    window.addEventListener('scroll', ()=>{
+      const y=window.scrollY+120;
+      sections.forEach((sec,i)=>{
+        const top=sec.offsetTop, bottom=top+sec.offsetHeight;
+        menuLinks[i].classList.toggle('active', y>=top && y<bottom);
+      });
+    }, {passive:true});
+  </script>
+</body>
+</html>
