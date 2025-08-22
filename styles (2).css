@@ -1,0 +1,84 @@
+/* -- Theme -- */
+:root{
+  --bg: #0b0e14;
+  --panel: #11151d;
+  --text: #e9eef7;
+  --muted: #a8b3c7;
+  --accent: #ff3266;
+  --accent-2: #2dd4bf;
+  --border: #1f2633;
+  --shadow: 0 12px 28px rgba(0,0,0,.35);
+  --radius: 16px;
+  --sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font:16px/1.6 var(--sans);color:var(--text);background:linear-gradient(180deg,#0b0e14,#0e1016 40%,#0b0e14);}
+
+/* -- Sidebar -- */
+.sidebar{
+  position:fixed; inset:0 auto 0 0; width:280px; background:#0e121a; border-right:1px solid var(--border);
+  padding:22px; display:flex; flex-direction:column; gap:22px; box-shadow:var(--shadow); z-index:10;
+}
+.brand{display:flex; gap:12px; align-items:center}
+.avatar{width:56px;height:56px;border-radius:50%;border:3px solid var(--accent); background:
+  radial-gradient(circle at 30% 30%, #fff3, #0000 40%), url('https://avatars.githubusercontent.com/u/1?v=4') center/cover, #222;}
+.brand h1{margin:0;font-size:18px; letter-spacing:1px;}
+.role{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+.nav{display:flex; flex-direction:column; gap:8px}
+.nav a{padding:10px 12px;border-radius:10px;color:var(--text);text-decoration:none;border:1px solid transparent}
+.nav a:hover{background:#121826;border-color:var(--border)}
+.nav a.active{background:linear-gradient(90deg,#121826,#151c2a);border-color:#202838}
+
+.actions{display:flex;flex-direction:column; gap:10px}
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;background:#131a27;border:1px solid var(--border);color:var(--text);text-decoration:none;text-align:center}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#ff658a);border:none}
+.menu{display:none;position:absolute;top:16px;right:-46px;border:1px solid var(--border);border-left:none;background:#0e121a;color:var(--text);padding:8px 10px;border-radius:0 8px 8px 0}
+
+/* -- Main -- */
+.content{margin-left:280px; padding:28px; max-width: 1100px;}
+.panel{background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:22px; margin:18px 0; box-shadow:var(--shadow)}
+
+.hero{background:
+  linear-gradient(0deg, #0f1624ee, #0f1624ee),
+  url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop') center/cover;
+  display:flex; align-items:end; min-height:220px; position:relative; overflow:hidden}
+.hero:before{content:''; position:absolute; inset:0; background:linear-gradient(90deg, transparent, #ff326633 30%, transparent 60%); pointer-events:none}
+.hero .hello{margin:0;color:var(--accent-2);font-weight:700; letter-spacing:.4px}
+.hero h2{margin:6px 0 0;font-size:32px}
+.hero h2 span{color:var(--accent)}
+.hero .tag{margin:6px 0 0; color:var(--muted)}
+.hero-meta{position:relative; z-index:1}
+
+.profile .timeline{display:grid; gap:10px}
+.profile .row{display:grid; grid-template-columns:160px 1fr; gap:10px; padding:8px 0; border-bottom:1px dashed #243048}
+.profile .row:last-child{border-bottom:none}
+.profile .label{color:var(--muted); font-weight:600}
+.profile .val a{color:#9ad1ff}
+
+/* Lists */
+.list{margin:0; padding-left:18px}
+.list li{margin:6px 0}
+
+.job header{display:flex; justify-content:space-between; gap:16px; align-items:center; border-bottom:1px solid #1b2333; padding-bottom:6px; margin-bottom:8px}
+.job h4{margin:0}
+.job ul{margin:8px 0 0 18px}
+
+/* Chips & cards */
+.chips{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.chips li{background:#121826;border:1px solid var(--border);padding:10px 12px;border-radius:10px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.cards article{background:#121826;border:1px solid var(--border);border-radius:12px;padding:14px}
+
+/* Footer */
+.footer{text-align:center;color:var(--muted);padding:10px 0 30px}
+
+/* -- Responsive -- */
+@media (max-width: 920px){
+  .content{margin-left:0;padding:18px}
+  .sidebar{transform:translateX(-100%); transition:.2s ease}
+  body.open .sidebar{transform:none}
+  .menu{display:block}
+}
