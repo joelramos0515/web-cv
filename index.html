@@ -1,89 +1,201 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Joel Adizas — Payroll Automation Specialist</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <title>Joel Adizas — Payroll Automation & Code</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Payroll automation specialist who codes: Google Apps Script, Excel VBA/macros, JS. US/PH payroll, garnishments, validations." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:,">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Joel Adizas — Payroll Automation & Code" />
+  <meta property="og:description" content="US/PH payroll · Apps Script · Excel VBA · Process automation" />
+  <meta property="og:type" content="website" />
+  <!-- JSON-LD for richer search results -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Joel Adizas",
+    "jobTitle":"Payroll Automation Specialist",
+    "url":"https://joelramos0515.github.io/web-cv",
+    "sameAs":[
+      "https://www.linkedin.com/in/your-linkedin",
+      "https://github.com/your-github"
+    ],
+    "knowsAbout":[
+      "Google Apps Script","Excel VBA","US Payroll","PH Payroll","Process Automation","Garnishments"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <h1>Joel Adizas</h1>
-      <p class="tagline">Payroll Automation Specialist · US/PH Payroll · Excel/VBA · Google Apps Script</p>
-      <div class="actions">
-        <a class="btn" href="mailto:your.email@example.com">📧 Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/your-linkedin" target="_blank">🔗 LinkedIn</a>
-        <a class="btn" href="https://github.com/your-github" target="_blank">💻 GitHub</a>
-        <a class="btn primary" href="resume.pdf" target="_blank">⬇️ Download CV</a>
-      </div>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <!-- Top nav -->
+  <header class="nav">
+    <div class="wrap nav-row">
+      <a class="brand" href="#">joel<span class="accent">.adizas</span></a>
+      <nav class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="btn ghost" aria-label="Toggle dark mode">🌓</button>
+      </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>About</h2>
-      <p>Certified Payroll Professional with deep experience in US/PH payroll, reconciliation, garnishments, and building automation using Excel (VBA/macros) and Google Apps Script. Passionate about simplifying complex payroll systems and delivering accurate, efficient solutions.</p>
-    </section>
+  <!-- Terminal-style hero -->
+  <section class="hero">
+    <div class="wrap term">
+      <div class="term-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="path">~/joel</span>
+      </div>
+      <div class="term-body">
+<pre aria-label="intro">
+$ whoami
+<span class="kw">Joel Adizas</span> — Payroll Automation Specialist who codes.
 
-    <section>
-      <h2>Skills</h2>
-      <ul class="grid">
-        <li>US/PH Payroll & Tax</li>
-        <li>Garnishments</li>
-        <li>Excel (VBA/Macros)</li>
-        <li>Google Apps Script</li>
-        <li>Process Automation</li>
-        <li>Data Reconciliation</li>
-        <li>SSS/PhilHealth/Pag-IBIG</li>
-        <li>BIR Withholding</li>
-      </ul>
-    </section>
+$ stack
+<span class="kw">Google Apps Script</span>, <span class="kw">Excel VBA</span>, <span class="kw">JavaScript</span>, <span class="kw">Process Automation</span>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="cards">
-        <article>
-          <h3>Payroll Validation Tool</h3>
-          <p>Built dynamic previews, status logic, and exports; reduced QA time by 60%.</p>
-          <a class="btn small" href="#" target="_blank">View write-up</a>
+$ mission
+Ship reliable payroll systems, automate the boring stuff, reduce cycle time.
+</pre>
+        <div class="actions">
+          <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">⬇ Download CV</a>
+          <a class="btn" href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <button class="btn" id="copyEmail" data-email="your.email@example.com">Copy Email</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="content" class="wrap">
+
+    <section id="projects">
+      <h2>Highlighted Projects</h2>
+      <div class="repo-grid">
+        <article class="repo">
+          <div class="repo-head">
+            <span class="repo-name">payroll-validation-tool</span>
+            <span class="repo-lang">Apps Script</span>
+          </div>
+          <p class="repo-desc">
+            Google Sheets + Apps Script validation UI with previews, status rules, exports.
+            Cut QA time by ~60%.
+          </p>
+          <div class="badges">
+            <span>Sheets</span><span>Apps Script</span><span>HTML/CSS</span><span>Export XLSX</span>
+          </div>
+          <div class="repo-actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener">🔗 Case study</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noopener">💻 Code</a>
+          </div>
         </article>
-        <article>
-          <h3>Withholding Tax Engine (PH)</h3>
-          <p>Real-time tax computation across pay frequencies using updated BIR tables.</p>
-          <a class="btn small" href="#" target="_blank">View code</a>
+
+        <article class="repo">
+          <div class="repo-head">
+            <span class="repo-name">withholding-tax-engine-ph</span>
+            <span class="repo-lang">VBA / Apps Script</span>
+          </div>
+          <p class="repo-desc">
+            Real-time BIR withholding calculator across frequencies (daily/weekly/semi-monthly/monthly).
+          </p>
+          <div class="badges">
+            <span>BIR</span><span>Tables</span><span>UDF</span><span>Unit Tests</span>
+          </div>
+          <div class="repo-actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener">🔗 Docs</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noopener">💻 Code</a>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="repo-head">
+            <span class="repo-name">salary-history-dashboard</span>
+            <span class="repo-lang">Apps Script</span>
+          </div>
+          <p class="repo-desc">
+            Userform-driven report generator (Job, Years) → summary tables & charts.
+          </p>
+          <div class="badges">
+            <span>Userform</span><span>Charts</span><span>Cache</span>
+          </div>
+          <div class="repo-actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener">🔗 Demo</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noopener">💻 Code</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="chip-grid">
+        <li>US/PH Payroll & Tax</li><li>Garnishments</li><li>Google Apps Script</li>
+        <li>Excel (VBA/Macros)</li><li>JavaScript</li><li>Process Automation</li>
+        <li>Data Reconciliation</li><li>SSS/PhilHealth/Pag-IBIG</li><li>BIR Withholding</li>
+      </ul>
+    </section>
+
+    <section id="experience">
       <h2>Experience</h2>
       <div class="job">
-        <h3>Payroll Specialist • Company</h3>
-        <p class="muted">2023 — Present</p>
+        <header class="job-head">
+          <h3>Payroll Specialist • Company</h3>
+          <span class="when">2023 — Present</span>
+        </header>
         <ul>
-          <li>Automated validation workflows; cut processing time by X hrs/cycle.</li>
+          <li>Automated validation workflows; reduced processing time by X hours per cycle.</li>
           <li>Managed garnishments & legal orders with zero compliance issues.</li>
-          <li>Standardized data pipelines across multiple entities.</li>
+          <li>Standardized data pipelines across multiple entities (Apps Script + VBA).</li>
         </ul>
       </div>
     </section>
 
-    <section>
-      <h2>Education & Certifications</h2>
-      <ul>
-        <li>Certified Payroll Professional (CPP)</li>
-        <li>Licensed Professional Teacher — Mathematics</li>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Based in Manila (UTC+8). Open to freelance/consulting for payroll automation.</p>
+      <ul class="contact">
+        <li>✉️ <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>💻 <a href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="y"></span> Joel Adizas · Manila (UTC+8)</p>
+    <p>© <span id="y"></span> Joel Adizas — Built with HTML/CSS/JS · Dark-first</p>
   </footer>
 
   <script>
+    // Year
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Theme toggle (persisted)
+    const root = document.documentElement;
+    const key = 'theme';
+    const saved = localStorage.getItem(key);
+    if (saved) root.dataset.theme = saved;
+    document.getElementById('themeToggle').onclick = () => {
+      const next = root.dataset.theme === 'light' ? 'dark' : 'light';
+      root.dataset.theme = next;
+      localStorage.setItem(key, next);
+    };
+
+    // Copy email
+    const copyBtn = document.getElementById('copyEmail');
+    copyBtn.addEventListener('click', () => {
+      const email = copyBtn.dataset.email;
+      navigator.clipboard.writeText(email).then(() => {
+        copyBtn.textContent = 'Copied ✓';
+        setTimeout(()=> copyBtn.textContent = 'Copy Email', 1200);
+      });
+    });
   </script>
 </body>
 </html>
